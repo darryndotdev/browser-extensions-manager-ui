@@ -21,4 +21,14 @@
     border-radius: var(--radius);
     border: none;
     cursor: pointer;
+    transition: background-color ease-in 300ms;
+}
+
+.btn:hover {
+    background-color: var(--clr-neutral-600);
+}
+
+.btn:focus-within {
+    outline: 2px solid var(--clr-red-400);
+    outline-offset: 2px;
 }
