@@ -1,0 +1,44 @@
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+fieldset {
+    display: flex;
+    border: none;
+    gap: 0.5rem;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-neutral-0);
+    background-color: var(--clr-neutral-800);
+    padding: 0.5rem 1rem;
+    outline: 1px solid var(--clr-neutral-600);
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: all ease-in 300ms;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+input:checked ~ .btn {
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-red-400);
+}
+
+.btn:hover {
+    background-color: var(--clr-neutral-600);
+}
+
+.btn:focus-within {
+    outline: 2px solid var(--clr-red-400);
+    outline-offset: 2px;
+}
