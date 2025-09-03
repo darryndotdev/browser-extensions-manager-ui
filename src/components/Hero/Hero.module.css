@@ -1,0 +1,24 @@
+.hero {
+    background-color: var(--clr-neutral-800);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.btn {
+    background-color: var(--clr-neutral-700);
+    padding: 1rem;
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+}

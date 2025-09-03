@@ -16,7 +16,11 @@
 
     --light-gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
     --dark-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+
+    --radius: 0.75rem;
 }
+
+/* font weights to be used as per style guide 400, 500, 700 */
 
 body {
     min-height: 100vh;
@@ -27,4 +31,29 @@ body {
     font-variation-settings: 'wdth' 100;
     color: var(--clr-neutral-300);
     background-image: var(--dark-gradient);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--clr-neutral-0);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h1 {
+    font-size: clamp(1.75rem, 1.6464rem + 0.5525vw, 2rem);
+}
+
+h2 {
+    font-size: clamp(2.125rem, 1.9696rem + 0.8287vw, 2.5rem);
+}
+
+h3 {
+    font-size: clamp(1.375rem, 1.2196rem + 0.8287vw, 1.75rem);
+}
+
+p {
+    font-size: clamp(1rem, 0.9482rem + 0.2762vw, 1.125rem);
 }

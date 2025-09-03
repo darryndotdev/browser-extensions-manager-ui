@@ -1,9 +1,10 @@
-import Container from './UI/Container/Container';
+import Container from './components/UI/Container/Container';
+import Hero from './components/Hero/Hero';
 
 function App() {
     return (
         <Container>
-            <p>Hello world!</p>
+            <Hero />
         </Container>
     );
 }
