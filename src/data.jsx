@@ -1,6 +1,19 @@
+import devlens from './assets/logo-devlens.svg';
+import stylespy from './assets/logo-style-spy.svg';
+import speedboost from './assets/logo-speed-boost.svg';
+import jsonwizard from './assets/logo-json-wizard.svg';
+import viewportbuddy from './assets/logo-viewport-buddy.svg';
+import tabmaster from './assets/logo-tab-master-pro.svg';
+import markup from './assets/logo-markup-notes.svg';
+import grid from './assets/logo-grid-guides.svg';
+import palette from './assets/logo-palette-picker.svg';
+import link from './assets/logo-link-checker.svg';
+import dom from './assets/logo-dom-snapshot.svg';
+import console from './assets/logo-console-plus.svg';
+
 export const data = [
     {
-        logo: './assets/logo-devlens.svg',
+        logo: devlens,
         title: 'DevLens',
         description:
             'Quickly inspect page layouts and visualize element boundaries.',
@@ -8,14 +21,14 @@ export const data = [
         id: 1,
     },
     {
-        logo: './assets/logo-style-spy.svg',
+        logo: stylespy,
         title: 'StyleSpy',
         description: 'Instantly analyze and copy CSS from any webpage element.',
         isActive: true,
         id: 2,
     },
     {
-        logo: './assets/logo-speed-boost.svg',
+        logo: speedboost,
         title: 'SpeedBoost',
         description:
             'Optimizes browser resource usage to accelerate page loading.',
@@ -23,7 +36,7 @@ export const data = [
         id: 3,
     },
     {
-        logo: './assets/logo-json-wizard.svg',
+        logo: jsonwizard,
         title: 'JSONWizard',
         description:
             'Formats, validates, and prettifies JSON responses in-browser.',
@@ -31,14 +44,14 @@ export const data = [
         id: 4,
     },
     {
-        logo: './assets/logo-tab-master-pro.svg',
+        logo: tabmaster,
         title: 'TabMaster Pro',
         description: 'Organizes browser tabs into groups and sessions.',
         isActive: true,
         id: 5,
     },
     {
-        logo: './assets/logo-viewport-buddy.svg',
+        logo: viewportbuddy,
         title: 'ViewportBuddy',
         description:
             'Simulates various screen resolutions directly within the browser.',
@@ -46,7 +59,7 @@ export const data = [
         id: 6,
     },
     {
-        logo: './assets/logo-markup-notes.svg',
+        logo: markup,
         title: 'Markup Notes',
         description:
             'Enables annotation and notes directly onto webpages for collaborative debugging.',
@@ -54,7 +67,7 @@ export const data = [
         id: 7,
     },
     {
-        logo: './assets/logo-grid-guides.svg',
+        logo: grid,
         title: 'GridGuides',
         description:
             'Overlay customizable grids and alignment guides on any webpage.',
@@ -62,28 +75,28 @@ export const data = [
         id: 8,
     },
     {
-        logo: './assets/logo-palette-picker.svg',
+        logo: palette,
         title: 'Palette Picker',
         description: 'Instantly extracts color palettes from any webpage.',
         isActive: true,
         id: 9,
     },
     {
-        logo: './assets/logo-link-checker.svg',
+        logo: link,
         title: 'LinkChecker',
         description: 'Scans and highlights broken links on any page.',
         isActive: true,
         id: 10,
     },
     {
-        logo: './assets/logo-dom-snapshot.svg',
+        logo: dom,
         title: 'DOM Snapshot',
         description: 'Capture and export DOM structures quickly.',
         isActive: false,
         id: 11,
     },
     {
-        logo: './assets/logo-console-plus.svg',
+        logo: console,
         title: 'ConsolePlus',
         description:
             'Enhanced developer console with advanced filtering and logging.',

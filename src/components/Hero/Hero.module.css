@@ -1,6 +1,5 @@
 .hero {
     background-color: var(--clr-neutral-800);
-    margin-top: 2rem;
     margin-bottom: 3rem;
     padding: 1rem;
     border-radius: var(--radius);

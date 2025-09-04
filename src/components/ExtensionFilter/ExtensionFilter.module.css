@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 fieldset {
@@ -38,7 +41,7 @@ input:checked ~ .btn {
     background-color: var(--clr-neutral-600);
 }
 
-.btn:focus-within {
+.btn:focus-visible {
     outline: 2px solid var(--clr-red-400);
     outline-offset: 2px;
 }
