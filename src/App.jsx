@@ -22,6 +22,14 @@ function App() {
     if (sortBy === 'inactive')
         sortedExtensions = extensions.filter((item) => item.isActive === false);
 
+    function handleRemoveExtension(id) {
+        setExtensions((extensions) =>
+            extensions.filter((item) => item.id !== id)
+        );
+    }
+
+    console.log(extensions);
+
     return (
         <Container>
             <Hero />
@@ -29,7 +37,11 @@ function App() {
                 <ExtensionFilter input={sortBy} onSetSortBy={setSortBy} />
                 <CardsGrid>
                     {sortedExtensions.map((extension) => (
-                        <Card extension={extension} key={extension.id} />
+                        <Card
+                            extension={extension}
+                            key={extension.id}
+                            onRemoveExtension={handleRemoveExtension}
+                        />
                     ))}
                 </CardsGrid>
             </main>
