@@ -1,13 +1,15 @@
 import styles from './Card.module.css';
 
-const Card = ({ item }) => {
+const Card = ({ extension }) => {
     return (
         <li>
             <div className={styles.content}>
-                <img src={item.logo} alt='' />
+                <img src={extension.logo} alt='' />
                 <div>
-                    <h3>{item.title}</h3>
-                    <p className={styles.description}>{item.description}</p>
+                    <h3>{extension.title}</h3>
+                    <p className={styles.description}>
+                        {extension.description}
+                    </p>
                 </div>
             </div>
             <div className={styles.actions}>
