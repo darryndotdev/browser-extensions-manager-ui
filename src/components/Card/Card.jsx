@@ -1,6 +1,6 @@
 import styles from './Card.module.css';
 
-const Card = ({ extension, onRemoveExtension }) => {
+const Card = ({ extension, onRemoveExtension, onToggleExtension }) => {
     return (
         <li>
             <div className={styles.content}>
@@ -20,7 +20,13 @@ const Card = ({ extension, onRemoveExtension }) => {
                     Remove
                 </button>
                 <label className={styles.toggle}>
-                    <input type='checkbox' className={styles['toggle-input']} />
+                    <input
+                        type='checkbox'
+                        className={styles['toggle-input']}
+                        value={extension.isActive}
+                        onChange={() => onToggleExtension(extension.id)}
+                        checked={extension.isActive ? 'checked' : ''}
+                    />
                     <span className={styles.switch}></span>
                 </label>
             </div>

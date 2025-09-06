@@ -28,7 +28,13 @@ function App() {
         );
     }
 
-    console.log(extensions);
+    function handleToggleExtension(id) {
+        setExtensions((extensions) =>
+            extensions.map((item) =>
+                item.id === id ? { ...item, isActive: !item.isActive } : item
+            )
+        );
+    }
 
     return (
         <Container>
@@ -41,6 +47,7 @@ function App() {
                             extension={extension}
                             key={extension.id}
                             onRemoveExtension={handleRemoveExtension}
+                            onToggleExtension={handleToggleExtension}
                         />
                     ))}
                 </CardsGrid>
