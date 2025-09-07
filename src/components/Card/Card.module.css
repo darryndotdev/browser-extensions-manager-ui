@@ -6,6 +6,7 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 38rem;
 }
 
 .content {
