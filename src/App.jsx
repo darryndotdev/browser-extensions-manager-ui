@@ -42,18 +42,22 @@ function App() {
             <main>
                 <ExtensionFilter input={sortBy} onSetSortBy={setSortBy} />
                 <CardsGrid>
-                    {sortedExtensions.map((extension) => (
-                        <Card
-                            extension={extension}
-                            key={extension.id}
-                            onRemoveExtension={handleRemoveExtension}
-                            onToggleExtension={handleToggleExtension}
-                        />
-                    ))}
+                    {!extensions.length ? (
+                        <h3>You have removed all your extensions!</h3>
+                    ) : (
+                        sortedExtensions.map((extension) => (
+                            <Card
+                                sortedExtensions={sortedExtensions}
+                                extension={extension}
+                                key={extension.id}
+                                onRemoveExtension={handleRemoveExtension}
+                                onToggleExtension={handleToggleExtension}
+                            />
+                        ))
+                    )}
                 </CardsGrid>
             </main>
         </Container>
     );
 }
-
 export default App;
