@@ -19,10 +19,10 @@ fieldset {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--clr-neutral-0);
-    background-color: var(--clr-neutral-800);
+    background-color: var(--clr-neutral-400);
+    color: var(--clr-remove);
     padding: 0.5rem 1rem;
-    outline: 1px solid var(--clr-neutral-600);
+    outline: 1px solid var(--clr-outline);
     border-radius: 1.5rem;
     cursor: pointer;
     transition: all ease-in 300ms;
@@ -33,12 +33,12 @@ input[type='radio'] {
 }
 
 input:checked ~ .btn {
-    color: var(--clr-neutral-900);
+    color: var(--clr-btn);
     background-color: var(--clr-red-400);
 }
 
 .btn:hover {
-    background-color: var(--clr-neutral-600);
+    background-color: var(--clr-filter-hover);
 }
 
 .btn:focus-visible {

@@ -1,0 +1,17 @@
+.btn {
+    background-color: var(--clr-btn);
+    padding: 1rem;
+    border-radius: var(--radius);
+    border: none;
+    cursor: pointer;
+    transition: all ease-in 300ms;
+}
+
+.btn:hover {
+    background-color: var(--clr-btn-hover);
+}
+
+.btn:focus-visible {
+    outline: 2px solid var(--clr-red-400);
+    outline-offset: 2px;
+}

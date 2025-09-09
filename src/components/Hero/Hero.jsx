@@ -1,6 +1,6 @@
 import styles from './Hero.module.css';
 import logo from './../../assets/logo.svg';
-import sun from './../../assets/icon-sun.svg';
+import LightModeToggle from '../LightModeToggle/LightModeToggle';
 
 const Hero = () => {
     return (
@@ -10,9 +10,7 @@ const Hero = () => {
                 <h1>Extensions</h1>
             </div>
             <div>
-                <button className={styles.btn}>
-                    <img src={sun} alt='' />
-                </button>
+                <LightModeToggle />
             </div>
         </header>
     );
