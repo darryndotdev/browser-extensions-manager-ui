@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
--   [You can try it live here](https://darryndotdev.github.io/browser-extensions-manager-ui/m)
+-   [You can try it live here](https://darryndotdev.github.io/browser-extensions-manager-ui/)
 
 ## My process
 
